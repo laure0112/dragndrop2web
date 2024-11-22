@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://ia902300.us.archive.org/32/items/nelka-senavirathna-chinese-soul-flute/NelkaSenavirathna-ChineseSoulFlute.mp3">
+</head>
+
+<body>
+
+   <audio src="audio/NelkaSenavirathna-ChineseSoulFlute.mp3" autoplay loop controls> </audio>
+  <audio autoplay loop>
+    <source src="audio/NelkaSenavirathna-ChineseSoulFlute.mp3" type="audio/mpeg">
+</audio>
+<a href="index.html">
+  <div class="maison"> 
+    <img src="images/house.png" alt="">
+  </div>
+</a>
+
+
+  <div class="chat">
+    <img src="images/chat.png" alt="" srcset="">
+  </div>
+
+  <div class="bas">
+    <img class="draggable" src="images/bas.png" alt="" srcset="">
+  </div>
+
+  <div class="jupe">
+    <img class="draggable" src="images/jupe.png" alt="" srcset="">
+  </div>
+
+  <div class="hautb">
+    <img class="draggable" src="images/hautb.png" alt="" srcset="">
+  </div>
+
+  <div class="haut">
+    <img class="draggable" src="images/haut.png" alt="" srcset="">
+  </div>
+
+  <div class="noeud">
+    <img class="draggable" src="images/noeud.png" alt="" srcset="">
+  </div>
+
+  <div class="texte">
+    <img class="draggable" src="images/texte.png" alt="" srcset="">
+  </div>
+
+  <div class="robe">
+    <img class="draggable" src="images/robe.png" alt="" srcset="">
+  </div>
+
+  <div class="sac">
+    <img class="draggable" src="images/sac.png" alt="" srcset="">
+  </div>
+
+  <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+  <script>
+    var draggableElems = document.querySelectorAll('.draggable');
+    var draggies = [];
+
+    // On initialise Draggabilly pour chaque élément avec l'option "containment"
+    for (var i = 0; i < draggableElems.length; i++) {
+      var draggableElem = draggableElems[i];
+      
+      var draggie = new Draggabilly(draggableElem, {
+        containment: 'body'  // Limite le mouvement à la fenêtre du navigateur
+      });
+
+      draggies.push(draggie);
+    }
+  </script>
+
+</body>
+</html>

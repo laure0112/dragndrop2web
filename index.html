@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
+  <div class="corbeille">
+    <img class="draggable" src="images/corbeille.png" alt="" srcset="">
+  </div>
+
+
+
+    <div class="dossier">
+      <img class="draggable" src="images/the.png" alt="" srcset="">
+    <!--associé nom qui doit suivre (ex: thé)-->
+    </div>
+
+
+    <div class="photo2">
+      <img class="draggable" src="images/amour.png" alt="" srcset="">
+      <!--nom: Amour.png-->
+    </div>
+
+  
+    <div class="dossier2">
+      <img class="draggable" src="images/hunteed.png" alt="" srcset="">
+    </div>
+    <div class="dossier3">
+      <img class="draggable" src="images/lacartefrancaise.png" alt="" srcset="">
+    </div>
+
+   <div class="dossier4">
+      <img class="draggable" src="images/dada.png" alt="" srcset="">
+    </div>
+
+     <div class="dossier5">
+      <img class="draggable" src="images/ENC.png" alt="" srcset="">
+    </div>
+
+   <div class="dossier7">
+      <img class="draggable" src="images/persso.png" alt="" srcset="">
+    </div>
+
+
+
+    <div class="photo">
+      <img class="draggable" src="images/St Valentin.png" alt="" srcset="">
+      <!--nom: St_Valentin.png-->
+    </div>
+
+    <div class="photo3">
+      <img class="draggable" src="images/trans.png" alt="" srcset="">
+      <!--nom: St_Valentin.png-->
+    </div>
+   
+
+    <div class="jeu">
+      <a href="index2.html">
+      <img class="draggable" src="images/jeu.png" alt="" srcset="">
+     </a>
+      <!--nom: mon jeu-->
+    </div>
+</section>
+
+
+<!-- <section id="s2">
+        <div class="div1"> 
+            <img class="draggable" src="images/CS_Star_1.png" alt="" srcset="">
+        </div> 
+        <div class="div2"> <img class="draggable" src="images/CS_Star_2.png" alt="" srcset="">
+        </div> 
+        <div class="div3"> <img class="draggable" src="images/CS_Star_3.png" alt="" srcset="">
+        </div> 
+        <div class="div4">
+            <img class="draggable" src="images/CS_Star_4.png" alt="" srcset=""> 
+        </div> 
+        <div class="div5">
+         </div> 
+        <div class="div6">
+            <img class="draggable" src="images/CS_Star_5.png" alt="" srcset="">
+         </div> 
+        <div class="div7"> </div> 
+        <div class="div8"> </div> 
+        <div class="div9"> </div> 
+</section> -->
+
+  <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+  <script>
+    // Sélectionner tous les éléments à déplacer
+    var draggableElems = document.querySelectorAll('.draggable');
+
+    // Parcourir tous les éléments
+    for (var i = 0; i < draggableElems.length; i++) {
+        var draggableElem = draggableElems[i];
+
+        // Initialiser Draggabilly avec contrainte des limites
+        new Draggabilly(draggableElem, {
+            containment: 'body' // Empêche les éléments de sortir du body
+        });
+    }
+</script>
+
 </body>
 </html>
