@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<body>
+  <a href="index.html">
+  <div  id="close">
+    <div class="tab">
+   
+    <div class="parent">
+    <div class="div1">
+      <div id="rouge" onclick="myFunction()"></div>
+    </div> 
+  </a> 
+  
+    <div class="div2">
+      <div id="orange"></div>
+    </div>
+    <div class="div3">
+      <div id="vert"></div>
+    </div>
+    <div class="div4"> </div>
+    </div>
+      
+      <p id="favorites">Favorites</p>
+      
+      <button class="tablinks" onclick="openCity(event, 'Catella')" id="defaultOpen">Catella</button>
+      
+      <button class="tablinks" onclick="openCity(event, 'Beauthe')" id="defaultOpen">Beau thé</button>
+      
+      <button class="tablinks" onclick="openCity(event, 'Hunteed')" id="defaultOpen">Hunteed</button>
+
+
+    </div>
+    
+    <div id="Catella" class="tabcontent">
+      <img class="castella draggable" src="images/Mockup_Castella_LaureCARMONT 15.22.46.png">
+      <img class="castella2 draggable" src="images/Mockup_Castella_LaureCARMONT.png">
+      <img class="castella3 draggable" src="images/Exercice_Castella_LaureCARMONT_page-0001.jpg">
+    </div>
+    
+    <div id="Beauthe" class="tabcontent">
+      <img class="papa1 draggable" src="images/papa1.png">
+      <img class="papa2 draggable" src="images/papa2.png">
+      <img class="papa3 draggable" src="images/papa3.png">
+      <img class="spa draggable" src="images/spa.png">
+    </div>
+    
+    <div id="Hunteed" class="tabcontent">
+      <img class="hunteed draggable" src="images/Hunteed.png">
+    </div>
+      
+      </div>
+
+      <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+      <script>
+        // Sélectionner tous les éléments à déplacer
+        var draggableElems = document.querySelectorAll('.draggable');
+    
+        // Parcourir tous les éléments
+        for (var i = 0; i < draggableElems.length; i++) {
+            var draggableElem = draggableElems[i];
+    
+            // Initialiser Draggabilly avec contrainte des limites
+            new Draggabilly(draggableElem, {
+                containment: '.tabcontent' // Empêche les éléments de sortir du body
+            });
+        }
+
+
+
+        function openCity(evt, cityName) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+    </script>
+</body>

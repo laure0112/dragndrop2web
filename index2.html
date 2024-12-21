@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://ia902300.us.archive.org/32/items/nelka-senavirathna-chinese-soul-flute/NelkaSenavirathna-ChineseSoulFlute.mp3">
 </head>
 
-<body>
+<body id="chat">
 
-   <audio src="audio/NelkaSenavirathna-ChineseSoulFlute.mp3" autoplay loop controls> </audio>
+  <audio src="audio/_L.mp3" autoplay loop controls> </audio>
   <audio autoplay loop>
-    <source src="audio/NelkaSenavirathna-ChineseSoulFlute.mp3" type="audio/mpeg">
+    <source src="audio/_L.mp3" type="audio/mpeg">
 </audio>
+
+
 <a href="index.html">
   <div class="maison"> 
     <img src="images/house.png" alt="">
@@ -25,55 +27,247 @@
     <img src="images/chat.png" alt="" srcset="">
   </div>
 
+  <div class="texte">
+    <img src="images/texte.png" alt="" srcset="">
+  </div>
+
   <div class="bas">
-    <img class="draggable" src="images/bas.png" alt="" srcset="">
+    <img id="imageA"class="draggable" src="images/bas.png" alt="" srcset="">
   </div>
 
   <div class="jupe">
-    <img class="draggable" src="images/jupe.png" alt="" srcset="">
-  </div>
-
-  <div class="hautb">
-    <img class="draggable" src="images/hautb.png" alt="" srcset="">
+    <img id="imageB" class="draggable" src="images/jupe.png" alt="" srcset="">
   </div>
 
   <div class="haut">
-    <img class="draggable" src="images/haut.png" alt="" srcset="">
+    <img id="imageD" class="draggable" src="images/haut.png" alt="" srcset="">
+  </div>
+
+  <div class="hautb">
+    <img id="imageC" class="draggable" src="images/hautb.png" alt="" srcset="">
   </div>
 
   <div class="noeud">
-    <img class="draggable" src="images/noeud.png" alt="" srcset="">
-  </div>
-
-  <div class="texte">
-    <img class="draggable" src="images/texte.png" alt="" srcset="">
+    <img id="imageE" class="draggable" src="images/noeud.png" alt="" srcset="">
   </div>
 
   <div class="robe">
-    <img class="draggable" src="images/robe.png" alt="" srcset="">
+    <img id="imageF" class="draggable" src="images/robe.png" alt="" srcset="">
   </div>
 
   <div class="sac">
-    <img class="draggable" src="images/sac.png" alt="" srcset="">
+    <img id="imageG" class="draggable" src="images/sac.png" alt="" srcset="">
   </div>
 
-  <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+<script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
 
-  <script>
-    var draggableElems = document.querySelectorAll('.draggable');
-    var draggies = [];
+
+<script>
+
+
+// Sélectionner uniquement l'image A avec son id
+const imageA = document.getElementById('imageA');
+
+// Ajouter un gestionnaire d'événements au clic
+imageA.addEventListener('click', function () {
+    // Vérifier si l'image est déjà déplacée
+    if (this.classList.contains('moved')) {
+        // Si déplacée, revenir à sa position d'origine
+        this.style.top = ""; // Réinitialiser position verticale
+        this.style.left = ""; // Réinitialiser position horizontale
+        this.classList.remove('moved'); // Retirer la classe moved
+    } else {
+        // Sauvegarder la position actuelle avant de déplacer
+        const rect = this.getBoundingClientRect();
+        this.style.top = `${rect.top}px`;
+        this.style.left = `${rect.left}px`;
+
+        // Forcer un reflow pour permettre une transition fluide
+        this.offsetHeight;
+
+        // Ajouter la classe pour déplacer l'image au centre
+        this.classList.add('moved');
+    }
+});
+
+
+// Sélectionner uniquement l'image B avec son id
+const imageB = document.getElementById('imageB');
+
+// Ajouter un gestionnaire d'événements au clic
+imageB.addEventListener('click', function () {
+    // Vérifier si l'image est déjà déplacée
+    if (this.classList.contains('moved')) {
+        // Si déplacée, revenir à sa position d'origine
+        this.style.top = ""; // Réinitialiser position verticale
+        this.style.left = ""; // Réinitialiser position horizontale
+        this.classList.remove('moved'); // Retirer la classe moved
+    } else {
+        // Sauvegarder la position actuelle avant de déplacer
+        const rect = this.getBoundingClientRect();
+        this.style.top = `${rect.top}px`;
+        this.style.left = `${rect.left}px`;
+
+        // Forcer un reflow pour permettre une transition fluide
+        this.offsetHeight;
+
+        // Ajouter la classe pour déplacer l'image au centre
+        this.classList.add('moved');
+    }
+});
+
+
+
+// Sélectionner uniquement l'image B avec son id
+const imageC = document.getElementById('imageC');
+
+// Ajouter un gestionnaire d'événements au clic
+imageC.addEventListener('click', function () {
+    // Vérifier si l'image est déjà déplacée
+    if (this.classList.contains('moved')) {
+        // Si déplacée, revenir à sa position d'origine
+        this.style.top = ""; // Réinitialiser position verticale
+        this.style.left = ""; // Réinitialiser position horizontale
+        this.classList.remove('moved'); // Retirer la classe moved
+    } else {
+        // Sauvegarder la position actuelle avant de déplacer
+        const rect = this.getBoundingClientRect();
+        this.style.top = `${rect.top}px`;
+        this.style.left = `${rect.left}px`;
+
+        // Forcer un reflow pour permettre une transition fluide
+        this.offsetHeight;
+
+        // Ajouter la classe pour déplacer l'image au centre
+        this.classList.add('moved');
+    }
+});
+
+
+
+// Sélectionner uniquement l'image B avec son id
+const imageD = document.getElementById('imageD');
+
+// Ajouter un gestionnaire d'événements au clic
+imageD.addEventListener('click', function () {
+
+    // Vérifier si l'image est déjà déplacée
+    if (this.classList.contains('moved')) {
+        // Si déplacée, revenir à sa position d'origine
+        this.style.top = ""; // Réinitialiser position verticale
+        this.style.left = ""; // Réinitialiser position horizontale
+        this.classList.remove('moved'); // Retirer la classe moved
+    } else {
+        // Sauvegarder la position actuelle avant de déplacer
+        const rect = this.getBoundingClientRect();
+        this.style.top = `${rect.top}px`;
+        this.style.left = `${rect.left}px`;
+
+        // Forcer un reflow pour permettre une transition fluide
+        this.offsetHeight;
+
+        // Ajouter la classe pour déplacer l'image au centre
+        this.classList.add('moved');
+    }
+});
+
+
+
+// Sélectionner uniquement l'image B avec son id
+const imageE = document.getElementById('imageE');
+
+// Ajouter un gestionnaire d'événements au clic
+imageE.addEventListener('click', function () {
+    // Vérifier si l'image est déjà déplacée
+    if (this.classList.contains('moved')) {
+        // Si déplacée, revenir à sa position d'origine
+        this.style.top = ""; // Réinitialiser position verticale
+        this.style.left = ""; // Réinitialiser position horizontale
+        this.classList.remove('moved'); // Retirer la classe moved
+    } else {
+        // Sauvegarder la position actuelle avant de déplacer
+        const rect = this.getBoundingClientRect();
+        this.style.top = `${rect.top}px`;
+        this.style.left = `${rect.left}px`;
+
+        // Forcer un reflow pour permettre une transition fluide
+        this.offsetHeight;
+
+        // Ajouter la classe pour déplacer l'image au centre
+        this.classList.add('moved');
+    }
+});
+
+
+// Sélectionner uniquement l'image B avec son id
+const imageF = document.getElementById('imageF');
+
+// Ajouter un gestionnaire d'événements au clic
+imageF.addEventListener('click', function () {
+    // Vérifier si l'image est déjà déplacée
+    if (this.classList.contains('moved')) {
+        // Si déplacée, revenir à sa position d'origine
+        this.style.top = ""; // Réinitialiser position verticale
+        this.style.left = ""; // Réinitialiser position horizontale
+        this.classList.remove('moved'); // Retirer la classe moved
+    } else {
+        // Sauvegarder la position actuelle avant de déplacer
+        const rect = this.getBoundingClientRect();
+        this.style.top = `${rect.top}px`;
+        this.style.left = `${rect.left}px`;
+
+        // Forcer un reflow pour permettre une transition fluide
+        this.offsetHeight;
+
+        // Ajouter la classe pour déplacer l'image au centre
+        this.classList.add('moved');
+    }
+});
+
+
+// Sélectionner uniquement l'image B avec son id
+const imageG = document.getElementById('imageG');
+
+// Ajouter un gestionnaire d'événements au clic
+imageG.addEventListener('click', function () {
+    // Vérifier si l'image est déjà déplacée
+    if (this.classList.contains('moved')) {
+        // Si déplacée, revenir à sa position d'origine
+        this.style.top = ""; // Réinitialiser position verticale
+        this.style.left = ""; // Réinitialiser position horizontale
+        this.classList.remove('moved'); // Retirer la classe moved
+    } else {
+        // Sauvegarder la position actuelle avant de déplacer
+        const rect = this.getBoundingClientRect();
+        this.style.top = `${rect.top}px`;
+        this.style.left = `${rect.left}px`;
+
+        // Forcer un reflow pour permettre une transition fluide
+        this.offsetHeight;
+
+        // Ajouter la classe pour déplacer l'image au centre
+        this.classList.add('moved');
+    }
+});
+
+
+
+
+
+   // var draggableElems = document.querySelectorAll('.draggable');
+   // var draggies = [];
 
     // On initialise Draggabilly pour chaque élément avec l'option "containment"
-    for (var i = 0; i < draggableElems.length; i++) {
-      var draggableElem = draggableElems[i];
+    //for (var i = 0; i < draggableElems.length; i++) {
+      //var draggableElem = draggableElems[i];
       
-      var draggie = new Draggabilly(draggableElem, {
-        containment: 'body'  // Limite le mouvement à la fenêtre du navigateur
-      });
+      // var draggie = new Draggabilly(draggableElem, {
+       // containment: 'body'   Limite le mouvement à la fenêtre du navigateur
+      //});
 
-      draggies.push(draggie);
-    }
-  </script>
+      //draggies.push(draggie);
+    //}
+   </script>
 
 </body>
 </html>

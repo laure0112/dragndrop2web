@@ -5,89 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="corbeille">
-    <img class="draggable" src="images/corbeille.png" alt="" srcset="">
+    <figure class="draggable" id="corbeille">
+      <img class="corbeille-img" src="images/corbeille.png" alt="Corbeille">
+      <figcaption class="corbeille-text">Corbeille</figcaption>
+    </figure>
+  </div>
+  
+  <!-- Conteneur pour images supprimées -->
+  <div id="deleted-images-container" style="display: none;">
+    <h3>Images supprimées</h3>
+    <button id="restore-button">Restaurer les images</button>
+    <div id="deleted-images"></div>
   </div>
 
 
-
+  <a href="index3.html">
     <div class="dossier">
-      <img class="draggable" src="images/the.png" alt="" srcset="">
-    <!--associé nom qui doit suivre (ex: thé)-->
+      <figure class="draggable">
+        <img class="dossier-img" src="images/the.png" alt="Entreprise">
+        <figcaption class="dossier-text">Dossier_entreprise</figcaption>
+      </figure>
     </div>
+  </a>
+
+  <div class="photo2">
+    <figure class="draggable">
+      <img class="photo2-img" src="images/amour.png" alt="Amour">
+      <figcaption class="photo2-text">Amour.png</figcaption>
+    </figure>
+  </div>
+
+  <div class="dossier4">
+    <figure class="draggable">
+      <img class="dossier4-img" src="images/dada.png" alt="Dada">
+      <figcaption class="dossier4-text">Dossier_école</figcaption>
+    </figure>
+  </div>
+
+  <div class="dossier5">
+    <figure class="draggable">
+      <img class="dossier5-img" src="images/ENC.png" alt="ENC">
+      <figcaption class="dossier5-text">Dossier_entreprise</figcaption>
+    </figure>
+  </div>
+
+  <div class="dossier7">
+    <figure class="draggable">
+      <img class="dossier7-img" src="images/persso.png" alt="Perso">
+      <figcaption class="dossier7-text">Dossier_perso</figcaption>
+    </figure>
+  </div>
+
+  <div class="photo">
+    <figure class="draggable">
+      <img class="photo-img" src="images/St Valentin.png" alt="St Valentin">
+      <figcaption class="photo-text">St_Valentin.png</figcaption>
+    </figure>
+  </div>
+
+  <div class="photo3">
+    <figure class="draggable">
+      <img class="photo3-img" src="images/trans.png" alt="Trans">
+      <figcaption class="photo3-text">Clown_triste.png</figcaption>
+    </figure>
+  </div>
+
+  <div class="jeu">
+    <a href="index2.html">
+      <figure class="draggable">
+        <img class="jeu-img" src="images/jeu.png" alt="Mon jeu">
+        <figcaption class="jeu-text">Mon jeu</figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <div class="insta">
+    <a href="https://www.instagram.com/laure_creator/">
+      <figure class="draggable">
+        <img class="insta-img" src="images/Instagram.png" alt="Instagram">
+        <figcaption class="insta-text">Instagram</figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <div class="linkedin">
+    <a href="https://www.linkedin.com/in/laure-carmont-53b79619a/">
+      <figure class="draggable">
+        <img class="linkedin-img" src="images/linkedin.png" alt="LinkedIn">
+        <figcaption class="linkedin-text">LinkedIn</figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <div class="youtube">
+    <a href="https://www.youtube.com/@laure_creator">
+      <figure class="draggable">
+        <img class="youtube-img" src="images/youtube.png" alt="YouTube">
+        <figcaption class="youtube-text">YouTube</figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <div class="mail">
+    <a href="mailto:laure.carmont@gmail.com">
+      <figure class="mail">
+        <img class="mail-img" src="images/mail.png" alt="Envoyer un email">
+        <figcaption class="mail-text">Mail</figcaption>
+      </figure>
+    </a>
+  </div>
 
 
-    <div class="photo2">
-      <img class="draggable" src="images/amour.png" alt="" srcset="">
-      <!--nom: Amour.png-->
-    </div>
-
-  
-    <div class="dossier2">
-      <img class="draggable" src="images/hunteed.png" alt="" srcset="">
-    </div>
-    <div class="dossier3">
-      <img class="draggable" src="images/lacartefrancaise.png" alt="" srcset="">
-    </div>
-
-   <div class="dossier4">
-      <img class="draggable" src="images/dada.png" alt="" srcset="">
-    </div>
-
-     <div class="dossier5">
-      <img class="draggable" src="images/ENC.png" alt="" srcset="">
-    </div>
-
-   <div class="dossier7">
-      <img class="draggable" src="images/persso.png" alt="" srcset="">
-    </div>
-
-
-
-    <div class="photo">
-      <img class="draggable" src="images/St Valentin.png" alt="" srcset="">
-      <!--nom: St_Valentin.png-->
-    </div>
-
-    <div class="photo3">
-      <img class="draggable" src="images/trans.png" alt="" srcset="">
-      <!--nom: St_Valentin.png-->
-    </div>
-   
-
-    <div class="jeu">
-      <a href="index2.html">
-      <img class="draggable" src="images/jeu.png" alt="" srcset="">
-     </a>
-      <!--nom: mon jeu-->
-    </div>
-</section>
-
-
-<!-- <section id="s2">
-        <div class="div1"> 
-            <img class="draggable" src="images/CS_Star_1.png" alt="" srcset="">
-        </div> 
-        <div class="div2"> <img class="draggable" src="images/CS_Star_2.png" alt="" srcset="">
-        </div> 
-        <div class="div3"> <img class="draggable" src="images/CS_Star_3.png" alt="" srcset="">
-        </div> 
-        <div class="div4">
-            <img class="draggable" src="images/CS_Star_4.png" alt="" srcset=""> 
-        </div> 
-        <div class="div5">
-         </div> 
-        <div class="div6">
-            <img class="draggable" src="images/CS_Star_5.png" alt="" srcset="">
-         </div> 
-        <div class="div7"> </div> 
-        <div class="div8"> </div> 
-        <div class="div9"> </div> 
-</section> -->
 
   <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
 
@@ -103,8 +139,11 @@
         new Draggabilly(draggableElem, {
             containment: 'body' // Empêche les éléments de sortir du body
         });
+        
+
+        
     }
-</script>
+  </script>
 
 </body>
 </html>
