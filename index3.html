@@ -29,69 +29,126 @@
     <div class="div4"> </div>
     </div>
       
-      <p id="favorites">Favorites</p>
+      <p id="favorites">Dossier entreprises</p>
       
       <button class="tablinks" onclick="openCity(event, 'Catella')" id="defaultOpen">Catella</button>
       
       <button class="tablinks" onclick="openCity(event, 'Beauthe')" id="defaultOpen">Beau thé</button>
-      
-      <button class="tablinks" onclick="openCity(event, 'Hunteed')" id="defaultOpen">Hunteed</button>
+
+
+      <button class="tablinks" onclick="openCity(event, 'AJC Formation')" id="defaultOpen">AJC Formation</button>
+
+      <button class="tablinks" onclick="openCity(event, 'Vitre')" id="defaultOpen">La carte française</button>
+
+      <button class="tablinks" onclick="openCity(event, 'hunteed')" id="defaultOpen">Hunteed</button>
+
+
 
 
     </div>
     
     <div id="Catella" class="tabcontent">
+      <div class="zonecontent">
       <img class="castella draggable" src="images/Mockup_Castella_LaureCARMONT 15.22.46.png">
-      <img class="castella2 draggable" src="images/Mockup_Castella_LaureCARMONT.png">
       <img class="castella3 draggable" src="images/Exercice_Castella_LaureCARMONT_page-0001.jpg">
+    </div>
     </div>
     
     <div id="Beauthe" class="tabcontent">
+      <div class="zonecontent1">
       <img class="papa1 draggable" src="images/papa1.png">
       <img class="papa2 draggable" src="images/papa2.png">
       <img class="papa3 draggable" src="images/papa3.png">
       <img class="spa draggable" src="images/spa.png">
     </div>
+    </div>
     
-    <div id="Hunteed" class="tabcontent">
-      <img class="hunteed draggable" src="images/Hunteed.png">
+
+    <div id="AJC Formation" class="tabcontent">
+      <div class="zonecontent">
+      <img class="AJC1 draggable" src="images/AJC Formation1.jpg">
+      <img class="AJC2 draggable" src="images/AJC Formation2.jpg">
+      <img class="campus draggable" src="images/CampusAJC.jpeg">
+      </div>
+    </div>
+
+    <div id="Vitre" class="tabcontent">
+      <div class="zonecontent">
+      <img class="Vitre draggable" src="images/vitre.png">
+      </div>
     </div>
       
+
+
+    <div id="hunteed" class="tabcontent">
+      <div class="zonecontent">
+      <img class="hunteed draggable" src="images/Hunteed.png">
+      </div>
+
+    </div>
       </div>
 
       <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-
+      
       <script>
-        // Sélectionner tous les éléments à déplacer
-        var draggableElems = document.querySelectorAll('.draggable');
-    
-        // Parcourir tous les éléments
-        for (var i = 0; i < draggableElems.length; i++) {
-            var draggableElem = draggableElems[i];
-    
-            // Initialiser Draggabilly avec contrainte des limites
-            new Draggabilly(draggableElem, {
-                containment: '.tabcontent' // Empêche les éléments de sortir du body
-            });
-        }
+       
+  function openCity(evt, cityName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
 
 
 
-        function openCity(evt, cityName) {
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
-	document.getElementById(cityName).style.display = "block";
-	evt.currentTarget.className += " active";
+// Sélectionner tous les éléments à déplacer
+var draggableElems = document.querySelectorAll('.draggable');
+
+// Parcourir tous les éléments
+for (var i = 0; i < draggableElems.length; i++) {
+  var draggableElem = draggableElems[i];
+
+  // Initialiser Draggabilly avec contrainte des limites
+  new Draggabilly(draggableElem, {
+      containment: 'body' // Empêche les éléments de sortir du body
+  });
+  
+// Sélectionner tous les éléments à déplacer
+var draggableElems = document.querySelectorAll('.draggable');
+
+// Parcourir tous les éléments
+draggableElems.forEach(function (draggableElem) {
+// Initialiser Draggabilly
+new Draggabilly(draggableElem, {
+  containment: 'body'
+});
+
+// Ajouter un événement "click" pour mettre en avant l'image
+draggableElem.addEventListener('click', function () {
+  // Supprimer la classe active de toutes les images
+  draggableElems.forEach(function (img) {
+      img.classList.remove('active');
+  });
+
+  // Ajouter la classe active à l'image cliquée
+  this.classList.add('active');
+});
+});
+  
 }
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
     </script>
+
+
+
 </body>
+</html>

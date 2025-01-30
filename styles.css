@@ -1,3 +1,6 @@
+
+
+
 body {
     margin: 0;
     width: 100%;
@@ -8,6 +11,8 @@ body {
     font-family: "Inter", serif;
     font-family: "Inter", serif;
     font-weight: 600;
+    font-family: "inter", sans-serif;
+	color:#301605;
 }
 
 
@@ -242,7 +247,7 @@ img {
   .jupe{
     position: absolute;
     left: 51%;
-    top: 49%;
+    top: 50%;
 }
 
 .bas img{
@@ -357,11 +362,6 @@ audio {
 
 
 
-body {
-    font-family: "inter", sans-serif;
-	color:#301605;
-}
-
 
 /* Style the tab */
 .tab {
@@ -467,64 +467,619 @@ place-items: center;
 
 
 
+
+
+
+
+
 .castella {
-	width:35%;
+	width:45%;
     position: absolute;
-    left: 45%;
+    left: 5%;
     top: 23%;
 }
 
-.castella2{
-    width:35%;
-    position: absolute;
-    left: 20%;
-    top: 50%;
-}
-
 .castella3{
-    width:35%;
+    width:45%;
     position: absolute;
-    left: 10%;
-    top: 30%;
+    left: 54%;
+    top: 1%;
 }
 
 
 
 
 .papa1{
-    width:25%;
+    width:30%;
     position: absolute;
-    left: 34%;
-    top: 55%;
+    left: 1%;
+    top: 0%;
 }
 
 .papa2{
-    width:25%;
+    width:30%;
     position: absolute;
-    left: 20%;
-    top: 22%; 
+    left: 70%;
+    top: 30%; 
 }
 
 .papa3{
-    width:25%;
+    width:30%;
     position: absolute;
-    left: 53%;
-    top: 12%; 
+    left: 13%;
+    top: 51%; 
 }
 
 .spa{
-    width:25%;
+    width:30%;
     position: absolute;
-    left: 47%;
-    top: 42%; 
+    left: 37%;
+    top: 7%; 
 }
 
-
+/*grille icônes*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 30px) 1fr;
+    grid-template-rows: 50px;
+    place-items: center;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+    
+    #rouge {
+       margin-left: 70%;
+        width:15px;
+        height:15px;
+        background-color: red;
+        border-radius:50%;
+    }
+    
+    #orange {
+        margin-left: 40%;
+        width:15px;
+        height:15px;
+        background-color: rgb(255, 136, 0);
+        border-radius:50%;
+    }
+    
+    #vert {
+        margin-left: 30%;
+        width:15px;
+        height:15px;
+        background-color: rgb(33, 193, 11);
+        border-radius:50%;
+    }
+    
+    #favorites {
+        padding-left:20px;
+        padding-bottom:20px;
+        font-weight: bold;
+    }
 
 
 .hunteed{
+    width:50%;
+    position: absolute;
+    left: 40%;
+    top: 12%; 
+}
+
+.AJC1{
+    width:32%;
+    position: absolute;
+    left: 67%;
+    top: 24%; 
+}
+
+.AJC2{
+    width:32%;
+    position: absolute;
+    left: 17%;
+    top: 30%; 
+}
+
+.campus{
+    width:35%;
+    position: absolute;
+    left: 0%;
+    top: 0%; 
+}
+
+
+.Vitre{
+    width:50%;
+    position: absolute;
+    left: 23%;
+    top: 25%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.post1{
+    width:30%;
+    position: absolute;
+    left: 0.5%;
+    top: 51%; 
+}
+
+.post2{
+    width:30%;
+    position: absolute;
+    left: 69%;
+    top: 0.1%; 
+}
+
+.post3{
+    width:30%;
+    position: absolute;
+    left: 31%;
+    top: 49%; 
+}
+
+.post5{
+    width:30%;
+    position: absolute;
+    left: 63%;
+    top: 50%; 
+}
+
+.post6{
+    width:30%;
+    position: absolute;
+    left: 4%;
+    top: 4%; 
+}
+
+.post7{
+    width:30%;
+    position: absolute;
+    left: 37%;
+    top: 3%; 
+}
+
+
+
+.exces{
+    width:30%;
+    position: absolute;
+    left: 19%;
+    top: 14%; 
+}
+
+.mesure{
+    width:30%;
+    position: absolute;
+    left: 53%;
+    top: 28%; 
+}
+
+
+.logo{
+    width:15%;
+    position: absolute;
+    left: 3%;
+    top: 35%; 
+}
+
+.logo1{
+    width:15%;
+    position: absolute;
+    left: 6%;
+    top: 4%; 
+}
+
+.logo2{
+    width:15%;
+    position: absolute;
+    left: 2%;
+    top: 70%; 
+}
+
+.logo3{
+    width:15%;
+    position: absolute;
+    left: 73%;
+    top: 67%; 
+}
+
+
+.logo5{
+    width:37%;
+    position: absolute;
+    left: 24%;
+    top: 14%; 
+}
+
+.logo6{
+    width:37%;
+    position: absolute;
+    left: 62%;
+    top: 4%; 
+}
+
+.logo7{
+    width:37%;
+    position: absolute;
+    left: 57%;
+    top: 36%; 
+}
+
+.logo8{
+    width:37%;
+    position: absolute;
+    left: 24%;
+    top: 61%; 
+}
+
+
+.bandeau1{
+    width:60%;
+    position: absolute;
+    left: 24%;
+    top: 61%; 
+}
+
+.bandeau2{
+    width:60%;
+    position: absolute;
+    left: 4%;
+    top: 11%; 
+}
+
+.bandeau3{
+    width:60%;
+    position: absolute;
+    left: 34%;
+    top: 35%; 
+}
+
+
+
+
+
+
+
+
+
+.animaux1{
+    width:30%;
+    position: absolute;
+    left: 64%;
+    top: 15%; 
+}
+
+.animaux2{
+    width:30%;
+    position: absolute;
+    left: 1%;
+    top: 5%; 
+}
+
+.animaux3{
+    width:30%;
+    position: absolute;
+    left: 50%;
+    top: 59%; 
+}
+
+.animaux4{
+    width:30%;
+    position: absolute;
+    left: 6%;
+    top: 50%; 
+}
+
+.dada{
+    width:45%;
+    position: absolute;
+    left: 3%;
+    top: 50%; 
+}
+
+.dada2{
+    width:45%;
+    position: absolute;
+    left: 54%;
+    top: 15%; 
+}
+
+.haloween{
+    width:45%;
+    position: absolute;
+    left: 6%;
+    top: 2%; 
+}
+
+.alphabet{
+    width:30%;
+    position: absolute;
+    left: 1%;
+    top: 50%; 
+}
+
+.alphabet2{
+    width:30%;
+    position: absolute;
+    left: 56%;
+    top: 50%; 
+}
+
+.alphabet3{
+    width:30%;
+    position: absolute;
+    left: 6%;
+    top: 1%; 
+}
+
+.alphabet4{
+    width:30%;
+    position: absolute;
+    left: 40%;
+    top: 6%; 
+}
+
+.appli{
+    width:22%;
+    position: absolute;
+    left: 75%;
+    top: 26%; 
+}
+
+
+.appli2{
+    width:22%;
+    position: absolute;
+    left: 46%;
+    top: 6%; 
+}
+
+.appli3{
+    width:22%;
+    position: absolute;
+    left: 1%;
+    top: 1%; 
+}
+
+.appli4{
+    width:22%;
+    position: absolute;
+    left: 23%;
+    top: 21%; 
+}
+
+
+
+
+.dessin1{
+    width:30%;
+    position: absolute;
+    left: 3%;
+    top: 21%; 
+}
+
+.dessin2{
+    width:30%;
+    position: absolute;
+    left: 34%;
+    top: 1%; 
+}
+
+.dessin3{
+    width:30%;
+    position: absolute;
+    left: 69%;
+    top: 23%; 
+}
+
+
+.dessin4{
+    width:30%;
+    position: absolute;
+    left: 33%;
+    top: 28%; 
+}
+
+
+.dessin5{
+    width:30%;
+    position: absolute;
+    left: 64%;
+    top: 1%; 
+}
+
+.dessin6{
+    width:30%;
+    position: absolute;
+    left: 1%;
+    top: 4%; 
+}
+
+
+
+.meme1{
+    width:30%;
+    position: absolute;
+    left: 1%;
+    top: 4%; 
+}
+
+
+.meme2{
+    width:30%;
+    position: absolute;
+    left: 19%;
+    top: 40%; 
+}
+
+
+.meme3{
+    width:30%;
+    position: absolute;
+    left: 58%;
+    top: 34%; 
+}
+
+.meme4{
+    width:30%;
+    position: absolute;
+    left: 67%;
+    top: 4%; 
+}
+
+
+.meme5{
     width:30%;
     position: absolute;
     left: 47%;
-    top: 42%; 
+    top: 34%; 
 }
+
+.meme6{
+    width:30%;
+    position: absolute;
+    left: 7%;
+    top: 4%; 
+}
+
+.meme7{
+    width:30%;
+    position: absolute;
+    left: 47%;
+    top: 4%; 
+}
+
+
+.meme8{
+    width:30%;
+    position: absolute;
+    left: 59%;
+    top: 14%; 
+}
+
+.meme9{
+    width:30%;
+    position: absolute;
+    left: 5%;
+    top: 50%; 
+}
+
+.meme{
+    position: absolute;
+    left: 62%;
+    top: 34%;
+    width: 80px;
+}
+
+
+
+
+
+
+
+.draggable.active {
+    z-index: 100; /* Priorité très élevée pour apparaître devant les autres */
+}
+
+
+
+
+
+
+
+.draggable {
+    transition: opacity 0.5s ease-out;
+}
+
+.draggable[style*="display: none"] {
+    opacity: 0;
+}
+
+
+
+
+
+.amour{
+    position: absolute;
+    top: 50px; /* Positionne l'image juste en dessous du rectangle (qui a une hauteur de 50px) */
+    bottom: 0; /* Fait en sorte que l'image touche le bas de la page */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Ajuste le centrage en utilisant une translation de -50% de sa propre largeur */
+    width: auto; /* Garde les proportions de l'image */
+    height: calc(100vh - 50px); /* L'image prend toute la hauteur de la page, moins la hauteur du rectangle (50px) */
+}
+
+
+
+
+
+
+#page-portfolio{
+    background-color: #e9a2af;
+}
+
+
+#page-portfolio .rectangle p {
+    font-size: 16px; /* Taille du texte */
+    font-weight: bold; /* Poids du texte */
+    color: #422e1d;  /* Couleur du texte */
+    display: flex;           /* Utilise flexbox */
+    align-items: center;     /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */ 
+}
+
+#page-portfolio .rectangle {
+    position: fixed;  /* Le rectangle reste en haut de la page même lors du défilement */
+    top: 0;           /* Positionner le rectangle en haut */
+    left: 0;          /* Positionner à gauche */
+    width: 100%;      /* Largeur du rectangle qui s'étend sur toute la page */
+    height: 50px;     /* Hauteur fine du rectangle */
+    background-color:  #E9D3DC;;  /* Couleur du rectangle */
+}
+
+/* Autres styles spécifiques à cette page */
+#page-portfolio .tab {
+    background-color: transparent; /* Pour rendre l'arrière-plan transparent */
+    width: 0%;
+}
+
+
+
+
+
+
+
+/* Responsivité pour les tablettes (entre 480px et 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .chat img, .jupe img, .bas img, .hautb img, .haut img, .noeud img, .texte img, .robe img, .sac img {
+        width: 150px;
+    }
+
+    .tab {
+        width: 20%;
+    }
+
+    .parent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .castella, .castella3, .papa1, .papa2, .papa3, .spa, .hunteed, .AJC1, .AJC2, .campus, .Vitre {
+        width: 40%;
+    }
+}
+
+
