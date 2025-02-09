@@ -561,7 +561,12 @@ place-items: center;
     }
 
 
-
+.Hunteed{
+    width:50%;
+    position: absolute;
+    left: 40%;
+    top: 12%; 
+}
 
 .AJC1{
     width:32%;
